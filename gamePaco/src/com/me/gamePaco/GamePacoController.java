@@ -2,12 +2,13 @@ package com.me.gamePaco;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 
-public class GamePacoController {
+public class GamePacoController extends InputAdapter {
 	private Pixmap plataforma;
 	public Texture texture;
 	public Sprite cube;
@@ -18,6 +19,7 @@ public class GamePacoController {
 	
 	public void init(){
 		this.initPlatforms();
+		Gdx.input.setInputProcessor(this);
 	}
 	
 	public void update(float deltaTime){
@@ -48,7 +50,7 @@ public class GamePacoController {
 	//Controla la interacción con las teclas
 	private void hdlControls(float deltaTime){
 		//variable que controla la velocidad del movimiento
-		float cubeSpeed=deltaTime*10;
+		float cubeSpeed=deltaTime*100;
 		if(Gdx.input.isKeyPressed(Keys.A)){
 			this.cube.translate(-cubeSpeed,0);
 		}
@@ -61,6 +63,19 @@ public class GamePacoController {
 		if(Gdx.input.isKeyPressed(Keys.S)){
 			this.cube.translate(0,-cubeSpeed);
 		}
+	}
+	
+	@Override
+	public boolean keyUp (int keycode) {
+
+		//Reiniciamos el juego
+		if(keycode==Keys.ESCAPE)
+		{
+			this.init();
+		}
+		
+		return true;
+
 	}
 	
 }
