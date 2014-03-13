@@ -13,8 +13,6 @@ public class GamePacoRenderer implements Disposable{
 	private SpriteBatch batch;
 	private GamePacoController gC;
 
-	//Objetos gráficos
-	//public Sprite sprite;
 
 	public GamePacoRenderer(GamePacoController gC)  {
 		init();
@@ -34,7 +32,7 @@ public class GamePacoRenderer implements Disposable{
 		batch.setProjectionMatrix(camera.combined);
 		
 		batch.begin();
-			batch.draw(gC.textura,0,0);
+			gC.cube.draw(batch);;
 		batch.end();
 
 	}
