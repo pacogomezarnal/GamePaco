@@ -30,9 +30,12 @@ public class GamePacoRenderer implements Disposable{
 	}
 	public void render () { 
 		batch.setProjectionMatrix(camera.combined);
+		gC.gcCamera.moverCamera(camera);
 		
 		batch.begin();
-			gC.cube.draw(batch);;
+			gC.cube.draw(batch);
+			gC.platStatic1.draw(batch);
+			gC.platStatic2.draw(batch);
 		batch.end();
 
 	}
