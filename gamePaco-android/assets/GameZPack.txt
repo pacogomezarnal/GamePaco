@@ -1,0 +1,25 @@
+GameZPack.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Room_v2
+  rotate: false
+  xy: 2, 2
+  size: 806, 808
+  orig: 806, 808
+  offset: 0, 0
+  index: -1
+gamepeq
+  rotate: false
+  xy: 2, 894
+  size: 27, 80
+  orig: 27, 80
+  offset: 0, 0
+  index: -1
+zombiepeq
+  rotate: false
+  xy: 2, 812
+  size: 49, 80
+  orig: 49, 80
+  offset: 0, 0
+  index: -1

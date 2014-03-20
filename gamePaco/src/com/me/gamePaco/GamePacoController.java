@@ -7,12 +7,16 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.utils.Array;
 
 public class GamePacoController extends InputAdapter {
 	private Pixmap plataforma;
 	public Texture texture,texture2,texture3;
 	public Sprite cube,platStatic1,platStatic2;
 	public GamePacoCamera gcCamera;
+	public TextureAtlas spriteSheet;
+	public Array<Sprite> objetos;
 	
 	public GamePacoController() {
 		init();
@@ -32,6 +36,10 @@ public class GamePacoController extends InputAdapter {
 	
 	//crea y coloca el cubo
 	private void initPlatforms(){
+		//inicializamos paquete
+		spriteSheet = new TextureAtlas("GameZPack.txt");
+		objetos = spriteSheet.createSprites();
+		
 		//crear nuestra plataforma
 		plataforma=new Pixmap(32,32,Format.RGBA8888);
 		plataforma.setColor(1, 0, 0, 0.5f);
@@ -44,7 +52,8 @@ public class GamePacoController extends InputAdapter {
 		
 		//Cargar textura
 		texture =new Texture(plataforma);
-		cube=new Sprite(texture);
+		//cube=new Sprite(texture);
+		cube=objetos.get(1);
 		cube.setPosition(0, 0);
 		plataforma.dispose();
 		
