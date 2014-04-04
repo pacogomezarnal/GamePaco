@@ -5,19 +5,19 @@ import com.badlogic.gdx.math.Vector2;
 
 public abstract class GamePacoObject {
 	//Almacenará dimerentes atributos del objeto
-	public Vector2 position;
+	public Vector2 posicion;
 	public Vector2 dimension;
-	public Vector2 origin;
-	public Vector2 scale;
-	public float rotation;
+	public Vector2 origen;
+	public Vector2 escala;
+	public float rotacion;
 	
 
 	public GamePacoObject() {
-		position = new Vector2();
+		posicion = new Vector2();
 		dimension = new Vector2(1, 1);
-		origin = new Vector2();
-		scale = new Vector2(1, 1);
-		rotation = 0;
+		origen = new Vector2();
+		escala = new Vector2(1, 1);
+		rotacion = 0;
 	}
 	
 	public void update (float deltaTime) {

@@ -33,10 +33,11 @@ public class GamePacoRenderer implements Disposable{
 		gC.gcCamera.moverCamera(camera);
 		
 		batch.begin();
-			gC.objetos.get(0).draw(batch);
-			gC.cube.draw(batch);
-			gC.platStatic1.draw(batch);
-			gC.platStatic2.draw(batch);
+			gC.gcMapa.render(batch);
+			//gC.objetos.get(0).draw(batch);
+			//gC.cube.draw(batch);
+			//gC.platStatic1.draw(batch);
+			//gC.platStatic2.draw(batch);
 		batch.end();
 
 	}

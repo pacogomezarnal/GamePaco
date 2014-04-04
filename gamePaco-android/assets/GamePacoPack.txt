@@ -1,0 +1,46 @@
+GamePacoPack.jpg
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Zombie
+  rotate: false
+  xy: 350, 0
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+Rig_wall
+  rotate: false
+  xy: 0, 0
+  size: 100, 500
+  orig: 100, 500
+  offset: 0, 0
+  index: -1
+table
+  rotate: false
+  xy: 300, 0
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Player
+  rotate: false
+  xy: 375, 0
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+Left_wall
+  rotate: false
+  xy: 200, 0
+  size: 100, 500
+  orig: 100, 500
+  offset: 0, 0
+  index: -1
+Mid_wall
+  rotate: false
+  xy: 100, 0
+  size: 100, 500
+  orig: 100, 500
+  offset: 0, 0
+  index: -1

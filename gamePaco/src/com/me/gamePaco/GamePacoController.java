@@ -18,6 +18,8 @@ public class GamePacoController extends InputAdapter {
 	public TextureAtlas spriteSheet;
 	public Array<Sprite> objetos;
 	
+	public GamePacoMapa gcMapa;
+	
 	public GamePacoController() {
 		init();
 	}
@@ -26,7 +28,7 @@ public class GamePacoController extends InputAdapter {
 		this.initPlatforms();
 		gcCamera = new GamePacoCamera();
 		gcCamera.setSprite(cube);
-		Gdx.input.setInputProcessor(this);
+		Gdx.input.setInputProcessor(this);		
 	}
 	
 	public void update(float deltaTime){
@@ -59,6 +61,10 @@ public class GamePacoController extends InputAdapter {
 		
 		createPixmapsDebug();
 		//sprite = new Sprite (textura);
+		
+		//Cargar Mapa
+		gcMapa=new GamePacoMapa();
+		gcMapa.setLargo(4);
 	}
 	
 	//Controla la interacción con las teclas

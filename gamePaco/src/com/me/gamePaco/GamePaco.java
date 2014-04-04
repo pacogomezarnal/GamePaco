@@ -28,7 +28,7 @@ public class GamePaco implements ApplicationListener {
 	@Override
 	public void render() {		
 		gameController.update(Gdx.graphics.getDeltaTime());
-		Gdx.gl.glClearColor(0.64f, 0.95f, 0.95f, 1f);
+		Gdx.gl.glClearColor(1f, 1f, 1f, 1f);
 		// Clears the screen
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		// Render game world to screen
