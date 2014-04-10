@@ -38,6 +38,9 @@ public class GamePacoController extends InputAdapter {
 	
 	//crea y coloca el cubo
 	private void initPlatforms(){
+		//cargar texturas
+		GamePacoLoader.instance.init();
+		
 		//inicializamos paquete
 		spriteSheet = new TextureAtlas("GameZPack.txt");
 		objetos = spriteSheet.createSprites();

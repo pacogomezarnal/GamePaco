@@ -1,0 +1,53 @@
+GamePacoPack_v2.jpg
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mapa_der_medio
+  rotate: false
+  xy: 160, 160
+  size: 80, 40
+  orig: 80, 40
+  offset: 0, 0
+  index: -1
+Mapa_med_sup
+  rotate: false
+  xy: 80, 0
+  size: 40, 160
+  orig: 40, 160
+  offset: 0, 0
+  index: -1
+Mapa_izq_sup
+  rotate: false
+  xy: 0, 0
+  size: 80, 160
+  orig: 80, 160
+  offset: 0, 0
+  index: -1
+Mapa_der_sup
+  rotate: true
+  xy: 0, 160
+  size: 160, 80
+  orig: 80, 160
+  offset: 0, 0
+  index: -1
+Mapa_der_inf
+  rotate: false
+  xy: 120, 80
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+Mapa_izq_inf
+  rotate: false
+  xy: 160, 0
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+Mapa_izq_medio
+  rotate: true
+  xy: 120, 0
+  size: 40, 80
+  orig: 80, 40
+  offset: 0, 0
+  index: -1

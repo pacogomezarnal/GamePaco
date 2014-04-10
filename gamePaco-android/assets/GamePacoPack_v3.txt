@@ -1,0 +1,18 @@
+GamePacoPack_v3.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mesa
+  rotate: true
+  xy: 0, 360
+  size: 59, 117
+  orig: 117, 59
+  offset: 0, 0
+  index: -1
+Mapa01
+  rotate: false
+  xy: 0, 0
+  size: 360, 360
+  orig: 360, 360
+  offset: 0, 0
+  index: -1
