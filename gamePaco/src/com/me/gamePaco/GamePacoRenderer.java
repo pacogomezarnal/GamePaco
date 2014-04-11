@@ -34,6 +34,8 @@ public class GamePacoRenderer implements Disposable{
 		
 		batch.begin();
 			gC.gcMapa.render(batch);
+			gC.gcMesa.render(batch);
+			gC.gcPlayer.render(batch);
 			//gC.objetos.get(0).draw(batch);
 			//gC.cube.draw(batch);
 			//gC.platStatic1.draw(batch);

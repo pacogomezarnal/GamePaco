@@ -9,12 +9,16 @@ public class GamePacoLoader {
 	public static final GamePacoLoader instance = new GamePacoLoader();
 	//objetos
 	public Sprite mapa;
+	public Sprite mesa;
+	public Sprite player;
 
 	private GamePacoLoader () {}
 	
 	public void init () {
 		TextureAtlas spriteSheet = new TextureAtlas("GamePacoPack_v3.txt");
 		mapa=spriteSheet.createSprite("Mapa01");
+		mesa=spriteSheet.createSprite("Mesa");
+		player=spriteSheet.createSprite("player");
 	}
 
 }

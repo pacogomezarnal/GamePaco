@@ -19,6 +19,8 @@ public class GamePacoController extends InputAdapter {
 	public Array<Sprite> objetos;
 	
 	public GamePacoMapa gcMapa;
+	public GamePacoMesa gcMesa;
+	public GamePacoPlayer gcPlayer;
 	
 	public GamePacoController() {
 		init();
@@ -68,6 +70,12 @@ public class GamePacoController extends InputAdapter {
 		//Cargar Mapa
 		gcMapa=new GamePacoMapa();
 		gcMapa.setLargo(4);
+		//Cargar Mesa
+		gcMesa=new GamePacoMesa();
+		gcMesa.setLargo(4);
+		//Cargar Player
+		gcPlayer=new GamePacoPlayer();
+		gcPlayer.setLargo(4);
 	}
 	
 	//Controla la interacción con las teclas

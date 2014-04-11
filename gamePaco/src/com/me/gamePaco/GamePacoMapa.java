@@ -17,7 +17,6 @@ public class GamePacoMapa  extends GamePacoObject{
 	
 	private void init () {
 		mapa=GamePacoLoader.instance.mapa;
-		// Start length of this rock
 		setLargo(1);
 		setAlto(1);
 	}
