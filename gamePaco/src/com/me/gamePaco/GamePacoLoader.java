@@ -15,7 +15,7 @@ public class GamePacoLoader {
 	private GamePacoLoader () {}
 	
 	public void init () {
-		TextureAtlas spriteSheet = new TextureAtlas("GamePacoPack_v3.txt");
+		TextureAtlas spriteSheet = new TextureAtlas("GamePacoPack_v4.txt");
 		mapa=spriteSheet.createSprite("Mapa01");
 		mesa=spriteSheet.createSprite("Mesa");
 		player=spriteSheet.createSprite("player");

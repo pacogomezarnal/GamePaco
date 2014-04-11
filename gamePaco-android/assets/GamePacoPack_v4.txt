@@ -1,4 +1,4 @@
-GamePacoPack_v3.png
+GamePacoPack_v4.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
@@ -10,11 +10,11 @@ Mesa
   offset: 0, 0
   index: -1
 player
-  rotate: true
+  rotate: false
   xy: 59, 360
-  size: 99, 100
-  orig: 108, 103
-  offset: 3, 2
+  size: 50, 50
+  orig: 54, 52
+  offset: 2, 1
   index: -1
 Mapa01
   rotate: false
